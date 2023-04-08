@@ -22,6 +22,6 @@ b.	Rest constraint: Between two blocks, there must be a rest period of at least 
   
 Objective function: The goal is to find a schedule that minimizs the cost function f1+ f2, where:
 
-1)	f1: Total cost of unassigned tasks, calculated as  times the number of unassigned tasks. (You can think of   as the monetary penalty cost for each unassigned task)
+1)	f1: Total cost of unassigned tasks, calculated as 'alpha' times the number of unassigned tasks. (You can think of 'alpha'  as the monetary penalty cost for each unassigned task)
 2)	f2: Total cost of workers, calculated as follows:
 For each worker, the cost of each allocated block is the block length multiplied by the worker’s hourly rate, subject to a minimum value of 4 hours multiplied by the hourly rate. The rationale is that each time a worker turns out for work, he/she should be compensated with a base payment. The total cost of workers is the sum over the costs of allocated blocks. 
